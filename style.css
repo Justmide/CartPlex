@@ -1,0 +1,2015 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Fredericka+the+Great&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Metal+Mania&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Reggae+One&display=swap');
+
+/* import 'animate.css'; */
+
+.fredericka-the-great-regular {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.gentium-book-plus-regular {
+    font-family: "Gentium Book Plus", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.metal-mania-regular {
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* .playwrite-gb-s-<uniquifier> {
+    font-family: "Playwrite GB S", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+   */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.topDisplay {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: #f1f1f1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1400;
+}
+
+.topDisplay p {
+    font-size: 17px;
+    font-family: "Gentium Book Plus", serif;
+    
+
+}
+
+
+.logo {
+   margin-right: 20px;
+
+}
+
+button .btn {
+    color: white;
+}
+
+header {
+    margin-top: 40px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 80px;
+    position: fixed;
+    padding-left: 4.5%;
+    padding-right: 4%;
+    border-bottom: 1px solid #f1f1f1;
+    /* border: medium solid rgb(0, 255, 242); */
+    z-index: 1000;
+}
+
+nav {
+    /* border: 2px solid #eb0404; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    font-family: "Gentium Book Plus", serif;
+
+}
+
+/* .navlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 2px solid #eb0404;
+} */
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    /* border: 2px solid #eb0404; */
+    width: 80%;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-right: 120px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #070707;
+    font-size: 18px;
+    font-weight: 500;
+    /* transition: all 0.3s ease; */
+}
+
+nav ul li a {
+    position: relative;
+    /* Establish a positioning context for the pseudo-element */
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    /* Ensures ::after aligns correctly */
+    padding-bottom: 5px;
+    /* Add spacing between text and underline */
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    /* Thickness of the underline */
+    background-color: rgb(5, 5, 5);
+    text-decoration: none;
+    transition: width 0.3s ease-in-out;
+    /* Smooth transition for the underline */
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    /* Fully extend the underline on hover */
+    text-decoration: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    /* Optional: Smooth color change on hover */
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #080808;
+    /* Adjust hover color if needed */
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 5px; */
+    /* border: 2px solid #eb0404; */
+    margin-left: 40px;
+
+}
+
+.search input {
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 220px;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    color: #070707;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px;
+    /* width: 100%; */
+}
+
+.search svg {
+    color: #070707;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.search svg:hover {
+    transform: scaleY(1.1);
+}
+
+
+/* Default User Icon */
+.user {
+    margin-left: 30px;
+    cursor: pointer;
+    display: block;
+}
+
+.user a{
+    text-decoration: none;
+    color: black;
+    border:  groove black;
+    padding: 2px 7px;
+    border-radius: 30px;
+}
+
+
+
+
+
+.cartLogo {
+    margin-left: 120px;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+
+.cartLogo svg {
+    width: 30px;
+    height: 30px;
+    margin-left: -130px;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+
+.cartOrder {
+    padding: 2px 5px;
+    font-family: "Gentium Book Plus", serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+    color: rgb(241, 239, 239);
+    font-size: 13px;
+    background-color: #f50505;
+    border-radius: 20px;
+}
+
+
+
+.logoTop{
+    filter: invert(5);
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: -70px;
+
+    /* backdrop-filter: blur(20px) grayscale(1); */
+    /* border: medium solid red; */
+}
+
+.sidenav a {
+    padding: 15px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fbf7f7;
+    display: block;
+    transition: 0.3s;
+    font-weight: 600;
+    font-family: "Playwrite GB S", serif;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.hamburger {
+    display: none;
+    margin-right: -1em;
+    /* margin-top: -10px; */
+    width: 10%;
+    /* border: medium solid red; */
+}
+
+.resLogo {
+    display: none;
+}
+
+.line {
+    width: 100%;
+    height: 10px;
+    /* border: medium solid red; */
+    margin-bottom: 10px;
+}
+
+.line2 {
+    width: 100%;
+    height: 1px;
+ 
+}
+
+
+.resLogo svg {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.cartNum2 {
+    margin-left: -18px;
+    padding: 5px 10px;
+    background-color: red;
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Gentium Book Plus", serif;
+    color: white;
+}
+
+/* LOGO RESPONSIVENESS IN-BETWEEN THE NAVIGATION BAR */
+.logoRes{
+  width: 80%;
+  display: none;
+}
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hidden Checkbox for Toggling */
+.dropdown-input {
+    display: none;
+}
+
+/* Dropdown Toggle */
+.dropdown-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropdown-toggle i {
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate Icon on Open */
+.dropdown-input:checked+.dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
+/* Dropdown Content (Initially Hidden) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px 0;
+}
+
+
+
+/* Show Dropdown on Checkbox Check */
+.dropdown-input:checked~.dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 30px;
+    text-decoration: none;
+    display: block;
+    width: 245px;
+    font-family: "Gentium Book Plus", serif;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.dropdown-content a i {
+    margin-right: 10px;
+   
+}
+
+
+
+/* STARTING OF HERO SECTION  */
+.sectionOne {
+    width: 100%;
+    height: 350px;
+    display: inline-flex;
+    /* border: 2px solid red; */
+    /* margin-top: 120px; */
+    padding-left: 10%;
+    padding-right: 8%;
+}
+
+.heroSection {
+    width: 100%;
+    display: inline-flex;
+    /* border: 2px solid rgb(0, 30, 255); */
+    
+}
+
+.leftSide{
+    width: 20%;
+    display: inline-flex;
+    flex-direction: column;
+    padding-top: 25px;
+    gap: 10px;
+    border-right: 1px solid #30303028;
+    height: 335px;
+    /* border: 2px solid red; */
+}
+
+.leftSide a{
+    padding-top: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Gentium Book Plus", serif;
+    transition: all 0.5s ease; 
+}
+
+.leftSide a:hover{
+    color: rgb(18, 18, 18);
+    background-color: #d1cbcb;
+    padding: 10px 10px;
+}
+
+.leftSide a:focus{
+     color: rgb(18, 18, 18);
+    background-color: #d1cbcb;
+    padding: 10px 10px;
+}
+
+.leftSide a i{
+    padding-right: 7px;
+}
+
+.rightSide{
+    width: 69%;
+    height: 100%;
+    margin-left: 30px;
+    /* border: 2px solid red; */
+}
+
+.carousel-item img{
+    height: 300px;
+    
+}
+
+.carousel-item{
+    margin-top: 30px;
+}
+
+/* .carousel-inner{
+    margin-left: 30px;   
+} */
+
+/* SECTION TWO  */
+.sectionTwo {
+    width: 100%;
+    height: 40%;
+    display: inline-flex;
+    /* border: 2px solid red; */
+    /* background-color: red; */
+    margin-top: 60px;
+    padding-left: 10%;
+    padding-right: 8%;
+}
+
+.sectionTwoContainer{
+    width: 100%;
+    display: inline-flex;
+    /* border: 2px solid rgb(0, 30, 255); */
+    height: 40%;
+}
+
+.todays{
+    width: 20px;
+    display: flex;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #DB4444;
+}
+
+.todays i{
+    color: white;
+    margin-top: 5px;
+    margin-left: 2px;
+    
+}
+
+.todays p{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Gentium Book Plus", serif;
+    padding-left: 10px;
+    color:#DB4444;
+}
+
+.flashSales{
+    display: inline-flex;
+    margin-top: 40px;
+    gap: 10px;
+    /* border: 2px solid red; */
+    margin-left: -20px;
+}
+
+.flashSales p{
+    font-size: 23px;
+    font-weight: bold;
+    word-spacing: 5px;
+    font-family: "Gentium Book Plus", serif;
+}
+
+
+.sectionThree{
+    width: 100%;
+    height: 24em;
+    display: inline-flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    /* background-color: red; */
+    margin-top: 40px;
+    padding-left: 10%;
+    padding-right: 8%;
+  
+}
+/* Main container with horizontal scrolling */
+.productView {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 2px solid red; */
+    gap: 10px;
+    overflow-x: auto; 
+    scrollbar-width: none;
+}
+
+.productView::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, Edge */
+}
+
+/* Individual product items */
+.productItem {
+    margin-top: -15px;
+    display: inline-flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    height: 320px;
+}
+
+/* Product image styling */
+.productView img {
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid rgba(61, 61, 61, 0.039);
+    padding: 15px 30px;
+    border-radius: 10px;
+    /* background-color: #f5f5f5; */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for movement */
+}
+
+/* Product title */
+.productView h3 {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "Gentium Book Plus", serif;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.productView h5 {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "Gentium Book Plus", serif;
+    margin-top: -10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Product description */
+.productView p {
+    font-size: 17px;
+    font-family: "Gentium Book Plus", serif;
+    /* border: 2px solid red; */
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: #DB4444;
+}
+
+
+
+/* Button styling */
+.productView button {
+    margin-top: -155px;
+    height: 30px;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    border: none;
+    font-family: "Gentium Book Plus", serif;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover effect for buttons */
+.productItem:hover button {
+    display: block;
+    animation: fadeIn 2s forwards; 
+   
+}
+
+/* Hover effect for image (move up on hover) */
+.productItem:hover img {
+    transform: translateY(-10px); /* Move image up */
+}
+
+/* Reset image position on hover out */
+.productItem:not(:hover) img {
+    transform: translateY(0); /* Move image back down */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        
+    }
+}
+
+.headerSearch{
+    width: 100%;
+    height: 100px;
+    display: inline-flex;
+    /* border: 2px solid red; */
+    margin-bottom: 100px;
+    padding-right: 2%;
+       padding-left: 2%;
+    display: none;
+
+}
+
+.allProduct{
+    margin-top: 20px;
+    width: 100%;
+    /* height: 40px; */
+    display: inline-flex;
+    /* border: 2px solid #DB4444; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #acaaaa82;
+   
+}
+
+.allProduct a{
+     background-color: #DB4444;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    border-radius: 5px;
+    font-family: "Gentium Book Plus", serif;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 9px;
+
+}
+
+
+
+
+.allProduct a:hover{
+    background-color: #d01616;
+    color: #f3f3f3;
+    /* border: 1px solid #DB4444; */
+}
+
+.searchTab{
+    width: 100%;
+    height: 50px;
+    display: inline-flex;
+    margin-top: 130px;
+}
+
+.searchTab input{
+    width: 100%;
+    height: 40px;
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-family: "Gentium Book Plus", serif;
+}
+
+.searchTab svg{
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    margin-left: -40px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Gentium Book Plus", serif;
+}
+
+/* Default Love Icon */
+.user2 {
+    /* margin-left: 26px; */
+    cursor: pointer;
+    display: none;
+}
+
+.user2 a{
+    text-decoration: none;
+    color: black;
+    border:  groove black;
+    padding: 2px 7px;
+    border-radius: 30px;
+}
+
+.searchTab input{
+    background-color: #6a696922;
+    border: none;
+}
+
+.sectionFour{
+    width: 100%;
+    height: 15em;
+    display: inline-flex;
+    /* border: 2px solid red; */
+    /* background-color: red; */
+    margin-top: 20px;
+    padding-left: 10%;
+    padding-right: 8%;
+}
+
+.categories{
+    width: 100%;
+    height: 10px;
+    display: inline-flex;
+    border-bottom: 1px solid #bdbdbd;  
+    flex-direction: column;
+}
+
+.categories .head{
+    width: 22px;
+    height: 26px;
+    display: inline-flex;
+    padding-left: 2px;
+    padding-top: 2px;
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    background-color: #DB4444;
+    
+}
+
+.categories .head p{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Gentium Book Plus", serif;
+    color: #DB4444;
+    margin-left: 7px;
+}
+
+.head i{
+    color: white;
+    margin-top: 3px;
+}
+
+.subHead {
+    display: inline-flex;
+    /* border: 2px solid red; */
+}
+
+.subHead p{
+    font-size: 23px;
+    font-weight: bold;
+    word-spacing: 2px;
+    font-family: "Gentium Book Plus", serif;
+}
+
+.boxCat{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    /* border: 2px solid red; */
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.boxCat .box{
+    width: 150px;
+    height: 100px;
+    display: inline-flex;
+    border-radius: 5px;
+    border: 1px solid #bdbdbd;
+    align-items: center;
+    justify-content: center;
+     transition: all 0.5s ease; 
+}
+
+.boxCat .box a{
+    display: inline-flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: "Gentium Book Plus", serif;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.boxCat .box:hover{
+    background-color: #DB4444;
+}
+
+.boxCat .box:hover a{
+    color: white;
+}
+
+.box i{
+    font-size: 20px;
+}
+
+/* SECTION FIVE  */
+.sectionFive{
+    width: 100%;
+    height: 28em;
+    display: inline-flex;
+    /* border: 2px solid red; */
+    /* background-color: red; */
+    margin-top: 20px;
+    padding-left: 10%;
+    padding-right: 8%;
+}
+
+.categories{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    /* border: 2px solid #DB4444; */
+    flex-direction: column;
+}
+
+.categories .month{
+    width: 22px;
+    height: 26px;
+    display: inline-flex;
+    padding-left: 2px;
+    padding-top: 2px;
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    background-color: #DB4444;
+    
+}
+
+.categories .month p{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Gentium Book Plus", serif;
+    color: #DB4444;
+    margin-left: 7px;
+}
+
+.month i{
+    color: white;
+   margin-left: 1px;
+   margin-top: 3px;
+}
+
+
+.subHead p{
+    font-size: 23px;
+    font-weight: bold;
+    word-spacing: 2px;
+    font-family: "Gentium Book Plus", serif;
+}
+
+/* ITEMS CART */
+.itemSection {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 2px solid red; */
+    gap: 10px;
+    overflow-x: auto; 
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.itemSection::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, Edge */
+}
+
+/* Individual product items */
+.itemCart {
+    margin-top: -15px;
+    display: inline-flex;
+    height: fit-content;
+}
+
+/* Product image styling */
+.itemSection img {
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid rgba(61, 61, 61, 0.039);
+    padding: 15px 30px;
+    border-radius: 10px;
+    /* background-color: #f5f5f5; */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for movement */
+}
+
+/* Product title */
+.itemSection h3 {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "Gentium Book Plus", serif;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.itemSection h5 {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "Gentium Book Plus", serif;
+    margin-top: -10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Product description */
+.itemSection p {
+    font-size: 17px;
+    font-family: "Gentium Book Plus", serif;
+    /* border: 2px solid red; */
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: #DB4444;
+}
+
+
+
+/* Button styling */
+.itemSection button {
+    margin-top: -155px;
+    height: 30px;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    border: none;
+    font-family: "Gentium Book Plus", serif;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 98%;
+}
+
+/* Hover effect for buttons */
+.itemCart:hover button {
+    display: block;
+    animation: fadeIn 2s forwards; 
+}
+
+/* Hover effect for image (move up on hover) */
+.itemCart:hover img {
+    margin-top: -120px;
+    /* transform: translateY(-20px); Move image up smoothly */
+    transition: transform 0.3s ease-in-out;
+    animation: 3s ease-in-out;
+}
+
+/* Reset image position on hover out */
+.itemCart:not(:hover) img {
+    transform: translateY(0);
+}
+
+/* Ensure other elements don't interfere */
+.itemCart:hover h3,
+.itemCart:hover p,
+.itemCart:hover h5 {
+    transform: none;
+}
+
+
+.itemCart{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.sectionSix{
+    width: 100%;
+    height: 10em;
+    display: inline-flex;
+    /* border: 2px solid red; */
+    /* background-color: red; */
+    margin-top: 20px;
+    padding-left: 10%;
+    padding-right: 8%;
+}
+
+.textBorder{
+   width: 100%;
+    height: 20px;
+    /* border: 2px solid #DB4444; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoSlider{
+    margin-top: 20px;
+    width: 100%;
+    /* border: 2px solid #DB4444; */
+}
+
+.label-tag {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 14px; 
+    color: #333; 
+    background-color: #f9f9f9; 
+    border: 2px solid #DB4444;
+    border-radius: 8px; 
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: relative;
+    font-size: 23px;
+    font-weight: bold;
+    word-spacing: 2px;
+    font-family: "Gentium Book Plus", serif;
+  }
+  
+  /* Add a triangular notch to the label */
+  .label-tag:before {
+    content: '';
+    position: absolute;
+    left: -8px; /* Adjust position of the notch */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 8px 8px 0;
+    border-color: transparent #000000 transparent transparent;
+  }
+
+/* Slider */
+ .logoSlider img {
+    width: 70px;
+    height: 70px;
+    animation: scroll 60s linear infinite;
+  }
+  
+  .slide-track {
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+  }
+  
+  .slider {
+    padding:5px 10px;
+    margin-top: 30px;
+  }
+  
+  @keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translatex(-1000%)}
+  }
+
+  /* SECTION SEVEN */
+  .sectionSeven{
+    width: 100%;
+    height: fit-content;
+    display: inline-flex;
+    /* border: 2px solid red; */
+    /* background-color: red; */
+    margin-top: 20px;
+    padding-left: 10%;
+    padding-right: 8%;
+
+  }
+
+  .jblSection{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    border-radius: 10px;
+    background-color:rgba(0, 0, 0, 0.96);
+    /* border: 2px solid red; */
+  }
+
+  .jblSection .leftDetails{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    padding: 10px 40px;
+    
+  }
+
+  .headerCategory{
+    font-family: "Playwrite GB S", serif;
+    /* border: 2px solid red; */
+  }
+
+  .headerCategory p{
+    font-size: 15px;
+    font-weight: bold;
+    word-spacing: 2px;
+    margin-top: 10px;
+    color: #ffffff;
+  }
+
+  .headerCategory p  a{
+    text-decoration: none;
+    text-align: center;
+    color: #DB4444;
+  }
+
+  .textDetails{
+    font-family: "Gentium Book Plus", serif;
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: 5px;
+    text-transform: capitalize;
+  }
+
+  .subdetails p{
+    margin-top: -10px;
+    font-size: 13px;
+    font-family: "Gentium Book Plus", serif;
+    color: rgba(255, 255, 255, 0.745);
+  }
+
+  .jblSection .rightImg{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    /* border: 2px solid red; */
+    background: radial-gradient(circle, rgb(255, 255, 255) -280%, rgb(0, 0, 0) 100%);
+    
+  }
+
+  .shopJbl button{
+    border: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: "Playwrite GB S", serif;
+  }
+  .shopJbl button i {
+    transition: margin-left 0.3s ease; /* Smooth transition for the movement */
+  }
+  
+  .shopJbl button:hover {
+    background-color: #DB4444;
+    color: white;
+  }
+  
+  .shopJbl button:hover i {
+    margin-left: 10px; /* Move the icon 10px further */
+  }
+
+  .sectionEight{
+    width: 100%;
+    height: 70em;
+    display: inline-flex;
+    /* border: 2px solid red; */
+    /* background-color: red; */
+    margin-top: 40px;
+    padding-left: 10%;
+    padding-right: 8%;
+}
+
+.ourProduct{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    /* border: 2px solid #DB4444; */
+    flex-direction: column;
+}
+
+.ourProduct .productzTxt{
+    width: 22px;
+    height: 26px;
+    display: inline-flex;
+    padding-left: 2px;
+    padding-top: 2px;
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    background-color: #DB4444;
+    
+}
+
+.ourProduct .productzTxt p{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Gentium Book Plus", serif;
+    color: #DB4444;
+    margin-left: 7px;
+}
+
+.productzTxt i{
+    color: white;
+   margin-left: 2px;
+   margin-top: 3px;
+}
+
+
+.productContent p{
+    font-size: 23px;
+    font-weight: bold;
+    word-spacing: 2px;
+    font-family: "Gentium Book Plus", serif;
+}
+
+/* ITEMS CART */
+    .productList {
+        margin-top: -15px;
+        display: inline-flex;
+        /* border: 2px solid red; */
+        height: fit-content;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+}
+
+.productList::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, Edge */
+}
+
+/* Individual product items */
+
+/* Product image styling */
+.productList img {
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    text-align: center;
+    /* border: 1px solid rgba(61, 61, 61, 0.039); */
+    padding: 15px 30px;
+    border-radius: 10px;
+    /* background-color: #f5f5f5; */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for movement */
+}
+
+/* Product title */
+.productList h3 {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "Gentium Book Plus", serif;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.productList h5 {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "Gentium Book Plus", serif;
+    margin-top: -10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Product description */
+.productList p {
+    font-size: 17px;
+    font-family: "Gentium Book Plus", serif;
+    /* border: 2px solid red; */
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: #DB4444;
+}
+
+
+
+/* Button styling */
+.productList button {
+    margin-top: -155px;
+    height: 30px;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    border: none;
+    font-family: "Gentium Book Plus", serif;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 72%;
+}
+
+
+
+/* Hover effect for buttons */
+.productSortList:hover button {
+    display: block;
+    animation: fadeIn 2s forwards; 
+   
+}
+
+/* Hover effect for image (move up on hover) */
+.productSortList:hover img {
+    transform: translateY(-10px); /* Move image up */
+}
+
+/* Reset image position on hover out */
+.productSortList:not(:hover) img {
+    transform: translateY(0); /* Move image back down */
+}
+
+.productSortList {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 25%;
+}
+
+
+.sectionNine{
+    width: 100%;
+    height: 32.5em;
+    display: inline-flex;
+    /* border: 2px solid red; */
+    /* background-color: red; */
+    margin-top: 155px;
+    padding-left: 10%;
+    padding-right: 8%;
+}
+
+.arrivalSection{
+    width: 100%;
+    height: 22.5em;
+    display: inline-flex;
+    border-radius: 10px;
+    /* background-color:rgba(0, 0, 0, 0.96); */
+    gap: 3%;
+    /* border: 2px solid red; */
+
+}
+
+.leftPart{
+    border-radius: 15px;
+    width: 45%;
+    height: 100%;
+    /* border: 2px solid blue; */
+     background-color:rgba(0, 0, 0, 0.96);
+     display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 10px 40px; */
+}
+
+
+.ps5Img img{
+    margin-top: 52px;
+    width: 300px;
+    
+}
+
+.allTxtContent{
+    width: 100%;
+    height: 100%;
+    margin-top: -105px;
+    display: inline-flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+
+.pstxt p{
+    font-size: 21px;
+    color: white;
+    font-family: "Gentium Book Plus", serif;
+}
+.subTxtPS5{
+    font-size: 13px;
+    color: white;
+    font-family: "Gentium Book Plus", serif;
+    margin-top: -15px;
+    line-height: 1.2;
+    padding-right: 50%;
+}
+
+.shopNowBtn{
+    margin-top: -10px;
+}
+
+.shopNowBtn a {
+    display: inline-block;
+    position: relative;
+    padding: 2px 10px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+    /* background-color: #333; */
+    overflow: hidden;
+    font-size: 13px;
+    font-family: "Playwrite GB S", serif;
+  }
+
+  .shopNowBtn a::before, 
+  .shopNowBtn a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    transition: all 0.5s linear;
+  }
+
+  .shopNowBtn a::before {
+    border-left-color: #fff;
+    border-top-color: #fff;
+    width: 0%;
+    height: 0%;
+  }
+
+  .shopNowBtn a::after {
+    right: 0;
+    bottom: 0;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    width: 0%;
+    height: 0%;
+  }
+
+  .shopNowBtn a:hover::before {
+    width: 100%;
+    height: 100%;
+  }
+
+  .shopNowBtn a:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  .shopNowBtn a:hover {
+   color: white;
+    /* background: #fff; */
+  }
+
+
+  /* RIGHT PART  */
+
+.rightPart{
+    width: 55%;
+    height: 100%;
+    border-radius: 10px;
+    /* border: 2px solid red; */
+    
+}
+
+.boxHolder{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid yellow; */
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.boxCon1{
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid rgb(255, 77, 0); */
+    display: inline-flex;
+    border-radius: 10px;
+    background-color: #0D0D0D;
+}
+
+.allCollection{
+    width: 50%;
+    margin-top: 50px;
+    padding-left: 25px;
+    z-index: 300;
+    position: relative;
+}
+
+.textCollection{
+    margin-top: 20px;
+    font-size: 22px;
+    /* font-weight: bold; */
+    word-spacing: 2px;
+    font-family: "Gentium Book Plus", serif;
+    color: white;
+}
+
+.subTextCollection{
+    font-size: 10px;
+    font-weight: 100;
+    font-family: "Gentium Book Plus", serif;
+    color: white;
+    margin-top: -10px;
+    line-height: 1.2;
+    padding-right: 30%;
+    margin-bottom: 20px;
+}
+
+.girlImg{
+    width: 50%;
+    height: 100%;
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.girlImg img{
+    border-radius: 10px;
+    width: 300px;
+    height: 170px;
+}
+
+.twoBox{
+    margin-top: 20px;
+    display: inline-flex;
+    gap: 25px;
+}
+.boxCon{
+    border-radius: 15px;
+    width: 50%;
+    height: 150px;
+    /* border: 1px solid rgb(255, 77, 0); */
+    background: radial-gradient(circle, rgb(255, 255, 255) -280%, rgb(0, 0, 0) 100%);
+    display: inline-flex;
+    justify-content: center;
+}
+
+.allboxCon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.soundImg img{
+margin-top: 10px;
+width: 120px;
+/* border: 1px solid red; */
+}
+
+.speakerTxtContent{
+    width: 100%;
+    height: 100%;
+    /* margin-top: -55px; */
+    display: inline-flex;
+    flex-direction: column;
+    /* padding-left: 15px; */
+    
+}
+
+.stxt p{
+    margin-top: -70px;
+    font-size: 15px;
+    color: white;
+    font-family: "Gentium Book Plus", serif;
+    margin-left: -10px;
+
+}
+
+
+.subTxtSpeaker{
+    margin-left: -10px;
+    margin-top: -50px;
+    font-size: 13px;
+    color: white;
+    font-family: "Gentium Book Plus", serif;
+    line-height: 1.2;
+}
+
+.boxBtn{
+    margin-left: -10px;
+    /* border: 2px solid red; */
+}
+
+/* SECOND BOXXXX */
+
+.boxCon2{
+    border-radius: 15px;
+    width: 50%;
+    height: 150px;
+    /* border: 1px solid rgb(255, 77, 0); */
+    background: radial-gradient(circle, rgb(255, 255, 255) -280%, rgb(0, 0, 0) 100%);
+    display: inline-flex;
+    justify-content: center;
+}
+
+.ptxt p{
+    margin-top: -60px;
+    font-size: 15px;
+    color: white;
+    font-family: "Gentium Book Plus", serif;
+    margin-left: -10px;
+
+}
+
+.subTxtPerf{
+    margin-left: -10px;
+    margin-top: -40px;
+    font-size: 13px;
+    color: white;
+    font-family: "Gentium Book Plus", serif;
+    line-height: 1.2;
+}
+
+.sectionTen{
+    width: 100%;
+    height: 18.5em;
+    display: inline-flex;
+    /* border: 2px solid red; */
+    /* background-color: red; */
+    margin-top: 5px;
+    padding-left: 10%;
+    padding-right: 8%;
+}
+
+
+.supportSec{
+    width: 100%;
+    height: 12em;
+    /* border: 2px solid red; */
+    display: inline-flex;
+    gap: 5%;
+}
+
+.teamBox{
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+}
+
+.deliverySec{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deliverySec img{
+    width: 30px;
+    height: 30px;
+}
+
+.textLabel{
+    margin-top: 10px;
+    flex-direction: column;
+    /* border: 2px solid rgb(0, 255, 21); */
+}
+
+.headerLabel p{
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Gentium Book Plus", serif;
+    font-weight: bold;
+   
+}
+
+.subTextLabel{
+    margin-top: -15px;
+    font-size: 12px;
+    color: black;
+    font-family: "Gentium Book Plus", serif;
+}
+
+
+footer{
+    width: 100%;
+    height: 15em;
+
+}
+
+/* .pt-5 {
+    padding-top: 2rem !important;
+} */
+
+.modern-footer {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.modern-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 89%;
+    background-color: black;
+    /* background: linear-gradient(45deg, rgba(108, 92, 231, 0.1) 0%, rgba(0, 0, 0, 0) 100%); */
+    z-index: 1;
+}
+
+
+.row {
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Gentium Book Plus", serif;
+}
+
+.footer-title {
+    color: #f4f6f7;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #ffffff, transparent);
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info i {
+    color: #ffffff;
+    width: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2d3436;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding-right: 5px;
+    padding-bottom: 5px;
+
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    color: #6c5ce7;
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.2);
+}
+
+.quick-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.quick-links a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.text-white {
+    font-size: 12px;
+}
+
+.quick-links a:hover {
+    color: #DB4444;
+    transform: translateX(5px);
+}
+
+.quick-links a::before {
+    content: '→';
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.quick-links a:hover::before {
+    opacity: 1;
+}
+
+.newsletter-input {
+    border: none;
+    padding: 0.8rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.btn-subscribe {
+    background: linear-gradient(45deg, #DB4444, rgb(208, 121, 121));
+    border: none;
+    box-shadow: 0 2px 10px rgb(74, 54, 54);
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-subscribe:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(215, 6, 6, 0.3);
+}
+
+.footer-bottom {
+    background: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #6c757d;
+}
+
+.footer-bottom a {
+    color: #DB4444;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .quick-links {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+.footerlogo img{
+    width: 120px;
+}
+
+  /* animation */
+  .animate-text {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .animate-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .productSortList:hover{
+    /* border: 1px solid gray; */
+    border-radius: 10px;
+    box-shadow: 2px 1px 10px gray;
+    transition: all 0.5s ease-in-out;
+  }
+
+.quantityControl{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.decreaseBtn{
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-bottom: 40px;
+   margin-top: -20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(250, 6, 6);
+    display: block;
+}  
+
+.decreaseBtn:hover{
+    color: rgb(250, 6, 6);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.decreaseBtn:active{
+    color: rgb(250, 6, 6);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.increaseBtn{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    margin-top: -20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(250, 6, 6);
+}
+
+.quantity{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(250, 6, 6);
+
+}

@@ -1,0 +1,93 @@
+/* For larger screens */
+@media (min-width: 1441px) {
+    body::before {
+        background-image:  url("https://img.freepik.com/free-photo/purchasing-shop-buying-selling-teade_53876-134043.jpg?t=st=1737054134~exp=1737057734~hmac=b1d3bb45a125a8934495c429695707057a7f8aee4fbb47ce0c2c3771bf3e8141&w=2000");
+        width: 100em;
+        height: 65em;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+/* For laptop screens */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    body::before {
+        background-image:  url("https://img.freepik.com/free-photo/purchasing-shop-buying-selling-teade_53876-134043.jpg?t=st=1737054134~exp=1737057734~hmac=b1d3bb45a125a8934495c429695707057a7f8aee4fbb47ce0c2c3771bf3e8141&w=2000");
+        width: 100em;
+        height: 65em;
+        background-position: center;
+        background-size: cover;
+    }
+
+}
+
+/* For tablet screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body::before {
+        background-image:  url("https://img.freepik.com/free-photo/purchasing-shop-buying-selling-teade_53876-134043.jpg?t=st=1737054134~exp=1737057734~hmac=b1d3bb45a125a8934495c429695707057a7f8aee4fbb47ce0c2c3771bf3e8141&w=2000");
+    }
+
+}
+
+
+/* For mobile screens */
+@media (max-width: 600px) {
+    body::before {
+        background-image:  url("https://img.freepik.com/free-photo/purchasing-shop-buying-selling-teade_53876-134043.jpg?t=st=1737054134~exp=1737057734~hmac=b1d3bb45a125a8934495c429695707057a7f8aee4fbb47ce0c2c3771bf3e8141&w=2000");
+    }
+
+    .wrapper{
+        margin-right: 10px;
+    }
+
+    button {
+        width: 270px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .wrapper {
+        margin-right: -10px;
+        width: 350px;
+    }
+
+    .btnLogin {
+        width: 280px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .wrapper {
+        margin-right: -10px;
+        width: 330px;
+    }
+
+    .btnLogin{
+        width: 240px;
+    }
+}
+
+@media (max-width: 380px) {
+    .wrapper {
+        margin-right: -10px;
+        width: 310px;
+    }
+
+    .register{
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+    .btnLogin{
+        width: 240px;
+    }
+}
+
+@media (max-width: 360px) {
+    .wrapper {
+        margin-right: 1px;
+        width: 300px;
+    }
+
+}

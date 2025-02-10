@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartplex E-commerce website</title>
+    <link rel="shortcut icon" href="../../../favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsiveness/index.css">
+    <link rel="stylesheet" href="../../dashboard.css">
+    <link rel="stylesheet" href="../settings.css">
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.min.css" rel="stylesheet">
+
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+
+@media (max-width: 991px) {
+    .sectionOne {
+        margin-top: 120px;
+    }
+}
+
+    .user {
+        /* margin-left: 150px; */
+        display: inline-flex;
+        cursor: pointer;
+        align-items: center;
+        width: 150px;
+        position: relative;
+        /* display: inline-block; */
+        cursor: pointer;
+    }
+
+    .dropdown,
+    .dropdown-center,
+    .dropend,
+    .dropstart,
+    .dropup,
+    .dropup-center {
+        position: absolute;
+    }
+
+    .iconContainer {
+        display: inline-flex;
+        /* border: 1px solid red; */
+
+    }
+
+
+    .iconContainer p {
+        /* width: 100%; */
+        display: inline-flex;
+        /* border: 1px solid red; */
+        padding-top: 20px;
+        padding-left: 5px;
+        height: 70px;
+        margin-top: 20px;
+    }
+
+    .search input {
+        margin-left: -30px;
+
+    }
+
+    .cartLogo {
+        margin-left: 130px;
+    }
+
+
+    @media (min-width: 768px) {
+
+        .container,
+        .container-md,
+        .container-sm {
+            max-width: 960px;
+        }
+
+        .form-control {
+            width: 14%;
+        }
+
+
+        .modern-footer::before {
+            height: 93%;
+        }
+
+        .col-md-12 {
+            flex-direction: column;
+            display: inline-flex;
+            height: 300px;
+
+        }
+
+
+        .footer-title {
+            width: 150px;
+        }
+    }
+
+    @media (min-width: 576px) {
+
+        .container,
+        .container-md,
+        .container-sm {
+            max-width: 1200px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .form-control {
+            width: 250px;
+        }
+
+        .mb-4 {
+            margin-bottom: 1.5rem !important;
+            display: inline-flex;
+            flex-direction: column;
+            width: 250px;
+        }
+
+        .modern-footer::before {
+            height: 94%;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            color: #6c757d;
+            height: 10px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .form-control {
+            width: 100%;
+        }
+
+        .btn {
+            width: 100%;
+        }
+
+    }
+
+    @media (max-width: 1065px) {
+        .form-control {
+            width: 250px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .mb-4 {
+            width: 100%;
+            font-size: 20px;
+        }
+
+    }
+
+    @media (max-width: 457px) {
+        .mb-4 {
+            width: 100%;
+            font-size: 17px;
+        }
+    }
+
+    @media(max-width: 1255px) {
+
+        .rightSide {
+            width: 74%;
+        }
+
+        .search input {
+            margin-left: -100px;
+        }
+    }
+
+    @media (max-width: 1120px) {
+        .rightSide {
+            width: 79%;
+        }
+    }
+
+    @media (max-width: 1045px) {
+        .navlist {
+            margin-left: -45px;
+        }
+
+        .logo {
+            margin-left: -30px;
+        }
+
+        .sectionOne {
+            padding-left: 7%;
+        }
+    }
+
+    @media (max-width: 1010px) {
+        .navlist {
+            margin-left: -55px;
+        }
+
+        .logo {
+            margin-left: -50px;
+        }
+
+        .sectionOne {
+            padding-left: 5%;
+        }
+    }
+
+
+
+    @media (max-width: 991px) {
+        .rightSide {
+            width: 97%;
+        }
+
+        .sectionOne {
+            padding-left: 2%;
+        }
+
+        .user2 {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .resLogo {
+            display: block;
+            padding-right: 10px;
+            margin-left: -20px;
+            margin-top: 10px;
+        }
+
+        .fundsect {
+            display: none;
+        }
+
+    }
+
+    @media (max-width: 778px) {
+        .resLogo {
+            display: block;
+            padding-right: 10px;
+            margin-left: -20px;
+            margin-top: 10px;
+        }
+    }
+
+    @media (max-width: 698px) {
+        .resLogo {
+            margin-left: -30px;
+            margin-top: 10px;
+        }
+    }
+
+    @media (max-width: 672px) {
+        .resLogo {
+            margin-left: -40px;
+            margin-top: 10px;
+        }
+    }
+
+    @media (max-width: 610px) {
+        .resLogo {
+            margin-left: -70px;
+            margin-top: 10px;
+        }
+    }
+
+    @media (max-width: 438px) {
+        .resLogo {
+            margin-left: -80px;
+            margin-top: 10px;
+        }
+    }
+
+
+
+
+    .fundsect {
+        margin-left: 20px;
+        font-weight: bold;
+
+    }
+
+    .fundsect a {
+        text-decoration: none;
+    }
+
+    .errMsgs {
+        color: red;
+        font-size: 20px;
+        font-family: "Gentium Book Plus", serif;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .logoTop img{
+        width: 200px;
+        height: 100px;
+    }
+
+    .orderDescription{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+</style>
+
+<body>
+    <div class="topDisplay">
+        <p class="pt-3" style="text-transform: capitalize;">CartPlex 2025 sales for all gadget and free express delivery
+            - OFF 35%! <a href="" style="color: white;">ShopNow</a></p>
+
+        <div class="fundsect">
+            <a href="" id="fund" class=" text-danger">
+                <i class="fa-solid fa-wallet"></i>₦ 0.00
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../../../index.html">
+                    <img src="../../../cartplex logo.png" alt="logo" width="150px">
+                </a>
+            </div>
+
+
+            <div class="navlist">
+                <ul>
+                    <li><a href="../../dashboard.html"><strong>Dashboard</strong></a></li>
+                    <li><a href="../../../about.html">About</a></li>
+                    <li><a href="../../../contact.html#address">Our Address</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search" class="searchInput">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+            </div>
+
+            <div class="iconContainer">
+
+                <div class="user">
+                    <a href="../settings.html">
+                        <img src="../../img/avatar.png" alt="" width="25px">
+                    </a>
+                    <p id="displayName"> </p>
+                    <div class="dropLogo">
+                        <i class="fa-solid fa-circle-chevron-down"></i>
+                    </div>
+                    <div class="dropdown">
+                        <a href="../settings.html"><i class="fa-regular fa-user"></i>Manage My Account</a>
+                        <a href="#order">
+                            <img src="../../img/icon-mallbag.png" alt="">
+                            Order</a>
+                        <a href="#Track"><i class="fa-solid fa-truck"></i>Track Package</a>
+                        <a href="#review">
+                            <img src="../../img/Icon-Reviews.png" alt="">
+                            Reviews</a>
+                        <a href="#support"><i class="fa-solid fa-headset"></i>Customer Support</a>
+                        <a href="" id="logOut">
+                            <img src="../../img/Icon-logout.png" alt="">
+                            Logout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cartLogo" id="cartLogo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                </svg>
+                <p class="cartOrder" id="cartNum">0</p>
+            </div>
+
+        </nav>
+
+        <div id="mySidenav" class="sidenav">
+            <div class="logoTop">
+                <img src="../../../cartplex logo.png" alt="logo" width="200px">
+            </div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Our Store</a>
+            <a href="#">New Products</a>
+            <a href="#">Track Package</a>
+            <a href="#">Contact Us</a>
+            <div class="dropdown">
+                <!-- Hidden Checkbox -->
+                <input type="checkbox" class="dropdown-input" id="dropdownToggle">
+
+                <!-- Dropdown Toggle -->
+                <label for="dropdownToggle" class="dropdown-toggle">
+                    <a href="#">Categories</a>
+                    <i class="fa fa-chevron-down"></i>
+                </label>
+
+                <!-- Dropdown Content -->
+                <div class="dropdown-content">
+                    <a href="#"><i class="bi bi-phone"></i>Phones</a>
+                    <a href="#"><i class="fa-solid fa-shirt"></i>Clothings</a>
+                    <a href="#"><i class="fa-regular fa-gem"></i>Jewelry</a>
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i>Bags</a>
+                    <a href="#"><i class="fa-brands fa-playstation"></i>Playstation</a>
+                    <a href="#"><i class="fa-solid fa-volume-high"></i>Speakers</a>
+                </div>
+            </div>
+            <a href="#">Complaint</a>
+
+        </div>
+        <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div class="logoRes">
+            <a href="../../../index.html">
+                <img src="../../../cartplex logo.png" alt="logo" width="150px"></a>
+        </div>
+
+
+
+
+        <div class="resLogo" id="cartLogo1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                viewBox="0 0 16 16">
+                <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+            <p class="cartNum2" id="cartNum2">0</p>
+
+        </div>
+        <div class="iconContainer2">
+            <div class="user2">
+                <div id="iconContainer" class="profSettings">
+                    <div class="logoTop">
+                        <img  src="../../../cartplex logo.png" alt="logo" width="200px">
+                    </div>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeProf()">&times;</a>
+                    <a href="../settings.html"><i class="fa-regular fa-user"></i> Manage My Account</a>
+                    <a href="./cart.html">
+                        <img src="../../img/icon-mallbag.png" alt=""> Order
+                    </a>
+                    <a href="../../../track/track.html"><i class="fa-solid fa-truck"></i> Track Package</a>
+                    <a href="../../../reviews/reviews.html">
+                        <img src="../../img/Icon-Reviews.png" alt=""> Reviews
+                    </a>
+                    <a href="../support/support.html"><i class="fa-solid fa-headset"></i> Customer Support</a>
+                    <a href="" id="logOut2">
+                        <img src="../../img/Icon-logout.png" alt="" id="logOut2"> Logout
+                    </a>
+
+                    <a href="" id="fund" class=" text-danger">
+                        <i class="fa-solid fa-wallet"></i>₦ 0.00
+                    </a>
+                </div>
+                <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openProf()">
+                    <a id="dropdownToggle">
+                        <img src="../../img/avatar.png" alt="Avatar" width="30px">
+                    </a>
+                </span>
+                <!-- Avatar Icon -->
+
+
+
+
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <section class="sectionOne">
+        <div class="breadcrumb">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item "><a class="text-danger h5" href="../../dashboard.html">Order</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                </ol>
+            </nav>
+          
+        </div>
+
+        <div class="heroSection">
+            <div class="orderQuote">
+                <p>"You've Got Great Taste! Complete Your Order Now!"</p>
+            </div>
+            <div class="orderDescription">
+                <h2>Your Cart Items</h2>
+                <p>Review your selected items below and proceed to checkout when ready.</p>
+            </div>
+            <div class="orderContainer" >
+                <div class="cartOrderSec">
+                    <div class="containerCart">
+                        <div class="shopping-cart">
+                            <h1>Shopping Cart</h1>
+                            <div class="cart-items">
+                                <!-- Cart Item 1 -->
+                                <div class="cart-item">
+                                    <div id="cartImg">
+                                    </div>
+                                    <div class="item-details">
+                                        <div id="cartName">
+                                        </div>
+                                        <div id="cartPrice">
+                                        </div>
+                                    </div>
+                                    <div class="item-controls">
+                                        <div id="cartControl">
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                
+                              
+                              
+                            </div>
+                        </div>
+                
+                        <div class="order-summary">
+                            <h2>Order summary</h2>
+                            <div class="summary-item">
+                                <span>Subtotal</span>
+                                <span id="subAmount"></span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Shipping estimate</span>
+                                <span>$15.00</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Tax estimate</span>
+                                <span>$5.52</span>
+                            </div>
+                            <div class="summary-total">
+                                <span>Order total</span>
+                                <span id="orderTotal"></span>
+                            </div>
+                            <button class="checkout-btn" id="checkOut">Checkout</button>
+                        </div>
+                    </div>
+                    </div>
+
+
+              
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer section -->
+    <footer class="text-white">
+        <div class="modern-footer pt-4">
+            <div class="container footer-content">
+                <div class="row g-4 mb-1">
+                    <!-- Company Info -->
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" class="footer-logo d-block mb-4">
+                            CartPlex<span class="text-primary">.</span>
+                        </a>
+                        <p class="mb-4 text-white">Your ultimate shopping destination! Discover deals, trends, and
+                            treasures—all in one place. Shop smart, shop Cartplex!</p>
+                        <ul class="contact-info mb-4">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Faith Bible rd<br>Oyo State, NG 23402</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+234 7088136059</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>interfaceiq@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="footer-title">Quick Links</h3>
+                        <ul class="quick-links">
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">About CartPlex</a></li>
+                            <li><a href="#">New Products</a></li>
+                            <li><a href="#">Carts</a></li>
+                            <li><a href="#">Customer Support</a></li>
+                            <li><a href="#">Contact Details</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-lg-4 col-md-12">
+                        <h3 class="footer-title">Stay Connected</h3>
+                        <p class="mb-4">Subscribe to our newsletter and stay updated with the latest arrival of new
+                            products and price slashes.</p>
+                        <form class="mb-4">
+                            <div class="mb-3">
+                                <input type="email" class="form-control newsletter-input w-80"
+                                    placeholder="Your email address">
+                            </div>
+                            <button type="submit" class="btn btn-subscribe text-white w-70">Subscribe Now</button>
+                        </form>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom ">
+                <div class="container pt-6">
+                    <div class="row py-2">
+                        <div class="col-md-4 text-center text-md">
+                            <p>&copy; <span id="websiteYear"></span> CartPlex. All rights reserved 💖</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+<script>
+    // Function to open and close the side navigation
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+function openProf() {
+    document.getElementById("iconContainer").style.width = "250px";
+}
+
+function closeProf() {
+    document.getElementById("iconContainer").style.width = "0";
+}
+
+</script>
+
+
+    <!-- <script src="./index.js" type="module"></script> -->
+    <!-- Remove duplicate bootstrap script since it's included below -->
+    <script src="../../dashboard.js" type="module"></script>
+    <script src="../settings.js" type="module"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.all.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- main-->
+    <script src="../../../main.js" type="module"></script>
+    <script src="./cart.js" type="module"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

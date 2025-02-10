@@ -1,0 +1,287 @@
+@media (max-width: 1455px) {
+    .cartLogo {
+        margin-left: 130px;
+    }
+
+    .search input {
+        margin-left: -70px;
+    
+    }
+
+    .rightSide {
+        width: 72%;
+    }
+}
+
+
+@media (max-width: 1410px) {
+    .rightSide {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 1360px) {
+    .search input {
+        margin-left: -90px;
+    }
+}
+
+@media (max-width: 1340px) {
+    .search input {
+        margin-left: -110px;
+    }
+}
+
+
+@media(max-width: 1315px){
+    .search input {
+        margin-left: -80px;
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    .rightSide {
+        width: 73%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .rightSide {
+        width: 75.5%;
+    }
+}
+
+
+
+@media(max-width: 1220px){
+    nav ul{
+margin-left: 20px;
+
+    }
+
+    .search input {
+        width: 200px;
+    }
+    
+    .rightSide {
+        width: 67%;
+    }
+}
+
+
+@media (max-width: 1180px) {
+    .logo {
+        margin-left: 0px;
+    }
+
+    .search input {
+        width: 180px;
+    }
+}
+
+@media (max-width: 1165px) {
+    nav ul {
+        margin-left: 40px;
+    }
+}
+
+
+
+@media (max-width: 1090px) {
+    nav ul {
+        margin-left: 20px;
+    }
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background-color: black;
+    width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 7px;
+    /* backdrop-filter: blur(5px); */
+  
+  }
+
+   i {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  .user a {
+   border: none;
+   
+  }
+
+  .dropdown a {
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    color: white;
+  }
+
+  .dropdown a:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown a:hover {
+    border-radius: 2px;
+    background-color: #d1d1d1;
+    transition: all 1s ease; 
+    color: white;
+  }
+
+  .user:hover .dropdown {
+    display: block;
+  
+  }
+  
+
+
+  .user a i{
+    margin-right: 10px;
+    color: white;
+   
+  }
+
+  .user a img{
+    /* margin-left: -3px; */
+    margin-top: -4px;
+  }
+
+
+  /* Base Styles */
+.iconContainer2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .user2 a{
+    position: relative;
+    border: none;
+  }
+  
+  .user2 img {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  /* Dropdown Menu Styles */
+  .dropdown2 {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: none; /* Initially hidden */
+    z-index: 10;
+    width: 200px;
+  }
+  
+  .dropdown2 a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+  
+  .dropdown2 a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Hidden Class */
+  .hidden {
+    display: none;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .dropdown2 {
+      width: 100%;
+      top: 50px;
+      right: 0;
+      border-radius: 0;
+    }
+  
+    .dropdown2 a {
+      padding: 15px;
+      font-size: 16px;
+    }
+  
+    .user2 img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+
+  .profSettings{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: -70px;
+
+    /* backdrop-filter: blur(20px) grayscale(1); */
+    /* border: medium solid red; */
+}
+
+.profSettings a {
+    padding: 15px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fbf7f7;
+    display: block;
+    transition: 0.3s;
+    font-weight: 600;
+    font-family: "Playwrite GB S", serif;
+}
+
+.profSettings a:hover {
+    color: #f1f1f1;
+}
+
+.profSettings a i {
+  font-size: 15px;
+  margin-left: -15px;
+  margin-right: 5px;
+}
+
+.profSettings a img{
+  width: 22px;
+  height: 22px;
+  margin-left: -20px;
+  margin-right: 5px;
+}
+
+.profSettings .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.greeting {
+  color: red;
+}

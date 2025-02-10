@@ -1,0 +1,881 @@
+@media(max-width: 2560px){
+.sectionOne{
+    margin-top: 120px;
+}
+}
+@media(max-width: 1455px){
+    .cartLogo {
+        margin-left: 160px;
+    }
+   
+    }
+
+@media(max-width: 1325px){
+    .cartLogo {
+        margin-left: 140px;
+    }
+    }
+    
+    
+    @media(max-width: 1285px){
+        .cartLogo {
+            margin-left: 150px;
+        }
+        }
+    
+        @media(max-width: 1195px){
+        .search input{
+            margin-left: -30px;
+        }
+        }
+
+        @media(max-width: 1165px){
+            .search input{
+                margin-left: -50px;
+            }
+            }
+
+            @media(max-width: 1165px){
+            .navlist{
+               margin-left: -30px;
+            }
+
+            .logo{
+                margin-left: -30px;
+            }
+            
+            }
+
+            @media(max-width: 1115px){
+                .search input {
+                    margin-left: -70px;
+                }
+
+            }
+
+            @media (max-width: 1075px) {
+                .navlist {
+                    margin-left: -50px;
+                }
+
+            }
+    @media(max-width: 1045px){
+        .navlist {
+            margin-left: -90px;
+        }
+        
+     }
+    
+     @media(max-width: 1020px){
+     .textCollection{
+        font-size: 17px;
+     }
+    }
+
+     @media(max-width: 991px){
+        /* *{
+            outline: 1px solid red;
+        } */
+
+        header{
+            padding-left: 10px;
+            padding-right: 13px;
+        }
+        nav{
+            display: none;
+        }
+        .carousel-item img{
+            height: 400px;
+            
+        }
+
+        .logoRes{
+            display: block;
+        }
+        
+      .hamburger{
+        display: block;
+      }
+    
+      .user2{
+        display: block;
+      }
+      .resLogo{
+        display: block;
+        padding-right: 10px;
+        margin-left: 20px;
+      }
+
+      .headerSearch{
+        display: block;
+      }
+
+      .sectionOne{
+       padding-right: 2%;
+       padding-left: 2%;
+      }
+      .heroSection {
+        width: 100%;
+        /* border: 2px solid rgb(0, 30, 255); */
+        flex-direction: column;
+        height: fit-content;
+        margin-top: -45px;
+    }
+    
+    .leftSide {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: -99px;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent content wrapping */
+        height: fit-content;
+    }
+
+    .leftSide a{
+        margin-left: 10px;
+        flex-direction: column;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftSide a i{
+        font-size: 20px;
+       padding-right: 0; 
+    }
+        
+    .rightSide{
+        width: 97%;
+        margin-left: 15px;
+
+    }
+
+    .carousel-inner{
+        margin-left: 0;
+    }
+
+    .sectionTwo {
+        margin-top: 50px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .sectionThree{
+       padding-left: 2%;
+       padding-right: 2%;
+    }
+
+    .sectionFour {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .sectionFive {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .sectionSix {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .sectionSeven {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .sectionEight {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .sectionNine {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .sectionTen {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .quick-links{
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+
+}
+
+
+@media (max-width: 877px) {
+    .resLogo {
+        display: block;
+        padding-right: 2px;
+    }
+}
+    
+@media (max-width: 827px) {
+    .resLogo {
+        display: block;
+        padding-right: 10px;
+        margin-left: 10px;
+    }
+}
+    @media (max-width: 815px) {
+    .textDetails{
+        font-size: 20px;
+    }
+    .subdetails p{
+        font-size: 11px;
+    }
+
+}
+
+    @media (max-width: 782px) {
+    .subTxtPS5{
+        font-size: 11px;
+    }
+    .subTxtPerf {
+        font-size: 11px;
+    }
+    .subTxtSpeaker{
+        font-size: 11px;
+    }
+    .subTextLabel{
+        font-size: 10px;
+    }
+    }
+    
+    @media (max-width: 777px) {
+        .resLogo {
+            display: block;
+            padding-right: 5px;
+            margin-left: 0px;
+        }
+    }
+
+    @media (max-width: 767px) {
+    .row>* {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .footer-title::after {
+        width: 20%;
+    }
+
+    .col-md-12 {
+        height: 320px;
+
+    }
+
+    button:not(:disabled) {
+        cursor: pointer;
+        width: 250px;
+    }
+
+    .quick-links a {
+        font-size: 17px;
+    }
+
+   
+}
+
+    @media (max-width: 750px) {
+       
+        .boxCon1{
+            width: 95%;
+        }
+
+        .boxCon{
+            width: 45%;
+        }
+
+        .boxCon2{
+            width: 45%;
+        }
+
+        .arrivalSection {
+            gap: 4%;
+        }
+
+        .text-white {
+            font-size: 16px;
+        }
+
+    }
+
+    
+
+    @media (max-width: 720px) {
+    .productView img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .boxCon1{
+        width: 92%;
+        height: 180px;
+    }
+
+    .boxCon{
+        width: 42%;
+    }
+
+    .boxCon2{
+        width: 42%;
+    }
+
+    .arrivalSection {
+        gap: 4%;
+    }
+
+    .textCollection {
+        font-size: 14px;
+    }
+
+    .subTextCollection{
+        padding-bottom: 5%;
+    }
+
+    .allCollection{
+        margin-top: 20px;
+    }
+
+    .arrivalSection{
+        width: 98%;
+    }
+
+    .jblSection .rightImg img{
+        width: 300px;
+        margin-top: 10px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+   
+    .boxCat .box{
+        width: 120px;
+    }
+
+    .ptxt p {
+        margin-left: 0;
+    }
+    .stxt p{
+        margin-left: 0;  
+    }
+
+    .subTxtPerf{
+        margin-left: 0;
+    }
+
+    .subTxtSpeaker{
+        margin-left: 0;
+    }
+
+    .boxBtn{
+        margin-left: 0;
+    }
+
+    .sectionNine{
+        height: fit-content;
+    }
+
+    .arrivalSection{
+        height: fit-content;
+        flex-direction: column;
+    }
+    .leftPart{
+        width: 100%;
+    }
+    .boxHolder{
+        margin-top: 10px;
+    }
+
+    .ps5Img {
+        width: 100%;
+        display: inline-flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+
+    .ps5Img img{
+        margin-top: 25px;
+        display: inline-flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 250px;
+    }
+
+    .allTxtContent{
+        margin-top: -50px;
+    }
+
+    .pstxt{
+        margin-top: -140px;
+    }
+
+    .leftPart{
+        height: 280px;
+        background: radial-gradient(circle, rgb(255, 255, 255) -280%, rgb(0, 0, 0) 100%);
+    } 
+
+    .pstxt p{
+        font-size: 35px;
+    }
+
+    .subTxtPS5{
+        font-size: 17px;
+    }
+
+    .shopNowBtn {
+        margin-top: 10px;
+    }
+
+    .rightPart{
+        width: 100%;
+    }
+
+    .boxCon1 {
+        width: 100%;
+        height: 250px;
+    }
+
+    .allCollection {
+        margin-top: 60px;
+    }
+
+    .girlImg img {
+        border-radius: 10px;
+        width: 400px;
+        height: 230px;
+    }
+
+    .subTextCollection {
+        padding-bottom: 0.5%;
+        font-size: 16px;
+        padding-right: 10%;
+    }
+
+    .textCollection {
+        font-size: 30px;
+    }
+
+    .boxCon {
+        width: 50%;
+    }
+    
+    .boxCon2 {
+        width: 50%;
+    }
+
+    .speakerTxtContent {
+        margin-top: -45px;
+        margin-left: -125px;
+    }
+
+    .supportSec {
+        display: inline-flex;
+        gap: 5%;
+        margin-top: 40px;
+    }
+
+    .headerLabel p{
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .subTextLabel {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+
+@media(max-width: 670px){
+    .productSortList{
+        width: 30%;
+    }
+
+    .sectionEight{
+        height: fit-content;
+
+    }
+    .productList{
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+
+    @media(max-width: 661px){
+    .topDisplay p {
+        font-size: 13px;
+    }
+    .productView {
+        gap: 5px
+    }
+    
+    
+}
+
+@media (max-width: 650px) {
+   
+
+    .boxCat {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        gap: 25px;
+    }
+
+    .boxCat .box {
+        width: 30%;
+    }
+
+    .sectionFour{
+        height: fit-content;
+    }
+
+
+}
+
+@media (max-width: 628px) {
+    .resLogo {
+        display: block;
+        padding-right: 0px;
+        margin-left: -20px;
+    }
+}
+
+
+@media (max-width: 626px) {
+    .textCollection {
+        font-size: 25px;
+    }
+}
+
+
+
+@media(max-width: 610px){
+   .hamburger{
+    margin-right: -14px;   
+   }
+   
+    /* .productView img {
+        height: 130px;
+        width: 130px;
+    } */
+}
+
+
+@media (max-width: 600px) {
+    .carousel-item img {
+        height: 350px;
+    }
+
+    .sectionTwo {
+        margin-top: 10px;
+    }
+
+    
+    
+    
+
+}
+@media (max-width: 575px) {
+.modern-footer::before {
+    height: 96%;
+}
+
+.teamBox {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #6c757d6c;
+
+}
+
+.headerLabel p {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.subTextLabel {
+    font-size: 20px;
+    text-align: center;
+}
+.speakerTxtContent {
+    margin-left: -100px;
+}
+
+.sectionTen{
+    height: fit-content;
+}
+
+.supportSec {
+    flex-wrap: wrap;
+    gap: 20px;
+    height: fit-content;
+    margin-bottom: 40px;
+}
+}
+
+
+@media (max-width: 561px) {
+    .resLogo {
+        display: block;
+        padding-right: 5px;
+        margin-left: -35px;
+    }
+    .carousel-item img {
+        height: 250px;
+    }
+
+    .itemSection img{
+        width: 170px;
+        height: 170px;
+    }
+
+    .productList img{
+        width: 170px;
+        height: 170px;
+    }
+
+    .productView {
+        gap: 5px;
+        margin-top: -40px;
+    }
+
+    .allProduct {
+        margin-top: 10px;
+    }
+
+    .sectionThree{
+        height: fit-content;
+    }
+
+    .sectionOne {
+        width: 100%;
+        height: 200px;
+
+    }
+    .productView img {
+        height: 120px;
+        width: 120px;
+    }
+   
+        .sectionTwo {
+            margin-top: 20px;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+    }
+
+
+
+    @media (max-width: 534px) {
+        .textCollection {
+            font-size: 20px;
+        }
+
+        .speakerTxtContent {
+            margin-left: -80px;
+        }
+    }
+
+    @media (max-width: 520px) {
+        .boxCat {
+            gap: 20px;
+        }
+
+        .subTextCollection {
+            font-size: 14px;
+        }
+
+        .subTxtPS5 {
+            font-size: 15px;
+        }
+
+        .itemSection img {
+            width: 140px;
+            height: 140px;
+        }
+    }
+
+@media(max-width: 500px){
+    
+    .topDisplay p {
+        font-size: 10px;
+    }
+    .leftSide a {
+        font-size: 10px;
+    }
+
+    .productList img {
+        width: 140px;
+        height: 160px;
+    }
+
+    .productList {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .head i {
+        margin-left: -1px;
+    }
+        
+ }
+
+ @media (max-width: 490px) {
+    .productSortList {
+        width: 40%;
+    }
+
+    .productList button {
+        width: 85%;
+    
+    }
+
+    .sidenav a{
+        font-size: 15px;
+    }
+    .speakerTxtContent {
+        margin-left: -40px;
+    }
+
+    .subTxtPS5 {
+        font-size: 14px;
+    }
+
+    .rightSide {
+        margin-left: 7px;
+    }
+}
+
+ @media (max-width: 450px) {
+    .productView img {
+        height: 100px;
+        width: 100px;
+    }
+    .rightSide {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .sectionTwo {
+        margin-top: -40px;
+    }
+
+    .sectionOne {
+        width: 100%;
+        height: 240px;
+    }
+
+    .textCollection {
+        font-size: 17px;
+    }
+
+    .subTextCollection {
+        font-size: 12px;
+    }
+    
+    .pstxt p {
+        font-size: 25px;
+    }
+
+    .speakerTxtContent {
+        margin-left: -20px;
+    }
+    .boxCat .box {
+        width: 45%;
+    }
+
+    .boxCat {
+        gap: 30px;
+    }
+
+    .subTextLabel {
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+
+}
+
+@media (max-width: 438px) {
+    .resLogo {
+        display: block;
+        padding-right: 5px;
+        margin-left: -45px;
+    }
+}
+
+
+ @media(max-width: 434px){
+    .hamburger{
+     margin-right: -5px;   
+    }
+    .resLogo {
+        margin-left: -60px;
+    }
+
+    .flashSales p {
+        font-size: 17px;
+    }
+
+    .productView h3 {
+        font-size: 8px;
+    }
+
+    .carousel-item img {
+        height: 200px;
+    }
+
+    .sectionOne {
+        width: 100%;
+        height: 200px;
+    }
+     
+    .girlImg img {
+        border-radius: 10px;
+        width: 300px;
+        height: 200px;
+    }
+
+    .speakerTxtContent {
+        margin-left: 0px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+    .headerLabel p {
+        font-size: 25px;
+        text-align: center;
+    }
+    .sidenav a{
+        font-size: 15px;
+    }
+}
+
+
+ @media(max-width: 385px){
+    .topDisplay p {
+        font-size: 9px;
+    }
+
+    .textCollection {
+        font-size: 14px;
+        font-weight: bold;
+    }
+ }
+
+
+
+ 

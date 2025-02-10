@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Login Form</title>
+
+</head>
+
+<link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../responsiveness/auth.css">
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 10px;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("./img/userCover.jpg"), #000;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.wrapper {
+  /* width: 400px; */
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  margin-right: -10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+}
+
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.15s ease;
+}
+
+.input-field input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label {
+  font-size: 0.8rem;
+  top: 10px;
+  transform: translateY(-120%);
+}
+
+.forget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0 35px 0;
+  color: #fff;
+}
+
+#remember {
+  accent-color: #fff;
+}
+
+.forget label {
+  display: flex;
+  align-items: first baseline;
+  /* margin-bottom: 5px; */
+}
+
+.forget label p {
+  margin-left: 8px;
+  /* margin-top: 10px; */
+  font-size: 15px;
+}
+
+.wrapper a {
+  color: #efefef;
+  text-decoration: none;
+}
+
+.wrapper a:hover {
+  text-decoration: underline;
+}
+
+.btnLogin {
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 13px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+  min-width: 240px;
+}
+
+button:hover {
+  color: #fff;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.register {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+.error{
+    color: red;
+    background-color: #ccc;
+    font-style: italic;
+    font-family: cursive;
+    font-size: 14px;
+}
+.form img{
+  width: 150px;
+  margin-top: -20px;
+  filter: invert(1);
+}
+
+.spinner-border{
+  display: none;
+}
+</style>
+<body>
+  <div class="wrapper">
+    <div id="form">
+      <div class="form">
+         <img src="../cartplex logo.png" alt="logo">
+      <p id="err" ></p>
+        <div class="input-field">
+        <input type="text" id="emailInp" >
+        <label>Email address</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="passInp" >
+        <label>Password</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember" >
+          <p class="text-danger">Remember me</p>
+        </label>
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+        <!-- <a href="#">Forgot password?</a> -->
+      </div>
+      <button type="submit" class="btnLogin" id="signIn">Login</button>
+      <div class="register">
+        <p>Don't have an account yet ? <a href="./signup.html" class="fst-italic text-danger h7">Sign Up</a></p>
+      </div>
+      <div class="register">
+        <p><a href="./resetPass.html" class="fst-italic text-danger h7">Reset Password</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script type="module">
+    
+    import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
+    const auth = getAuth(app);
+    
+    import { app } from "./index.js";
+    import { emailEl } from "./index.js";
+import { passwordEl } from "./index.js";
+const signInp = document.getElementById('signIn');
+const errMsgs = document.getElementById('err')
+const remember = document.getElementById('remember')
+
+
+
+
+  // 'email@mail.com', 'password'
+  // TRY AND CATCH MUST FOLLOW 
+
+     const signIn = async () =>{
+    try {
+      const res = await signInWithEmailAndPassword(auth, `${emailEl.value}`, `${passwordEl.value}`)
+      window.location.href = '../dashboard/dashboard.html';
+       // Sign-in successful
+    console.log("Sign-in successful");
+    } catch (error) {
+      console.error(error)
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      errMsgs.textContent = errorMessage
+      errMsgs.classList.add('error');
+      setTimeout(() => {
+            errMsgs.textContent = '';
+            errMsgs.classList.remove('error');
+        }, 3500);
+    }
+  }
+
+  // signIn()
+
+
+  signInp.addEventListener('click',() => { 
+    if (emailEl.value == '' || passwordEl.value == '') {
+        errMsgs.textContent = 'Please input all details to login to your account';
+        errMsgs.classList.add('error');
+
+        setTimeout(() => {
+            errMsgs.textContent = '';
+            errMsgs.classList.remove('error');
+        }, 3000);
+        
+        return;
+    } else { 
+      
+        signIn();
+    }
+});
+
+
+onAuthStateChanged(auth, (user)=>{
+    if (user) {
+      console.log(user);
+      window.location.href = '../dashboard/dashboard.html'
+
+    } else {
+      console.log('You are not logged in');
+    //   window.location.href = './index.html'
+    }
+    })
+
+
+
+
+  </script>
+</body>
+</html>
