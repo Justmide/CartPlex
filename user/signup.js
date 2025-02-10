@@ -74,7 +74,7 @@ const registerUser = async () => {
 };
 
 signupEl.addEventListener('click', () => {
-  if (emailEl.value === '' || passwordEl.value === '' || remember.checked === false) {
+  if (emailEl.value === '' || passwordEl.value === '') {
     errMsgs.textContent = 'Please fill all details to sign up ';
     errMsgs.classList.add('error');
 
