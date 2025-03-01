@@ -191,6 +191,7 @@
     .sectionNine {
         padding-left: 2%;
         padding-right: 2%;
+        margin-top: 55px;
     }
 
     .sectionTen {
@@ -651,7 +652,7 @@
     }
 
     .allProduct {
-        margin-top: 10px;
+        margin-top: -25px;
     }
 
     .sectionThree{
@@ -674,8 +675,12 @@
             padding-right: 2%;
         }
     }
-
-
+    
+    @media (max-width: 554px) {
+    .allProduct {
+        margin-top: 5px;
+    }
+}
 
     @media (max-width: 534px) {
         .textCollection {
