@@ -63,7 +63,7 @@ if ( cart && timeEl && webYear && productEl && sellingProductEl && productSort &
                 const productDiv = document.createElement('div');
                 productDiv.classList.add('productItem');
                 productDiv.innerHTML = `
-                    <img src="${product.image}" alt="${product.title}">
+                    <img src="${product.image}" alt="${product.title}" loading="lazy">
                     <h3>${product.title}</h3>
                     <p> $${product.price}</p>
                     <h5 class="Indicator"><i class="fa-regular fa-star"></i> ${product.rating.rate} <span>(${product.rating.count})</span></h5>
@@ -97,7 +97,7 @@ if ( cart && timeEl && webYear && productEl && sellingProductEl && productSort &
                 const itemCartEl = document.createElement('div');
                 itemCartEl.classList.add('itemCart');
                 itemCartEl.innerHTML = `
-                    <img src="${product.image}" alt="${product.title}">
+                    <img src="${product.image}" alt="${product.title}" loading="lazy">
                     <h3>${product.title}</h3>
                     <p> $${product.price}</p>
                     <h5><i class="fa-regular fa-star"></i> ${product.rating.rate} <span>(${product.rating.count})</span></h5>
@@ -130,7 +130,7 @@ if ( cart && timeEl && webYear && productEl && sellingProductEl && productSort &
                 const productSortDiv = document.createElement('div');
                 productSortDiv.classList.add('productSortList');
                 productSortDiv.innerHTML = `
-                    <img src="${product.image}" alt="${product.title}">
+                    <img src="${product.image}" alt="${product.title}" loading="lazy">
                     <h3>${product.title}</h3>
                     <p> $${product.price}</p>
                     <h5><i class="fa-regular fa-star"></i> ${product.rating.rate} <span>(${product.rating.count})</span></h5>

@@ -274,10 +274,27 @@
   text-decoration: none;
 }
 
+.subscribeBtn {
+  width: 255px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: red;
+  font-size: 20px;
+}
+
+ form p{
+  padding-top: 3px;
+}
+
 @media (max-width: 760px) {
-     button:not(:disabled) {
+     .btn .btn-subscribe:not(:disabled) {
             cursor: pointer;
-            /* width: 57%; */
+            width: 97%;
+        }
+      
+      button:not(:disabled) {
+            cursor: pointer;
+            width: 97%;
         }
       }
 
@@ -893,7 +910,7 @@
     <div class="mb-3">
       <input type="email" class="form-control newsletter-input w-80" placeholder="Your email address">
     </div>
-    <button type="submit" class="btn btn-subscribe text-white w-70">Subscribe Now</button>
+    <p type="submit" class="subscribeBtn text-white text-center ">Subscribe Now</p>
   </form>
   <div class="social-links">
     <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
